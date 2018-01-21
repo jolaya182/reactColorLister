@@ -12,7 +12,8 @@ module.exports = {
         "quotes": 0,
         "no-use-before-define": 0,
         "linebreak-style":0,
-        "no-undef": 0
+        "no-undef": 0,
+        "react/no-string-refs": 0
 
 
     }
