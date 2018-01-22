@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import AddColorForm from './AddColorForm';
+import '../../styleSheets/App.scss';
 
 export default class App extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ export default class App extends Component {
   }
   render() {
     const { addColor } = this;
-    const { colors } = this.colors;
+    const { colors } = this.state;
     return (
       <div className="app">
         <AddColorForm onNewColor={addColor} />

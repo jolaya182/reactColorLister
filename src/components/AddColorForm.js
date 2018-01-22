@@ -20,7 +20,8 @@ class AddColorForm extends Component {
       <input ref="_title" type="color title..." required />
       <input ref="_color" type="color" required />
       <button> ADD </button>
-    </form>
+            </form>
     );
   }
 }
+export default AddColorForm;

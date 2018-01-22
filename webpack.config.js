@@ -5,5 +5,38 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    sourceMapFilename: 'bundle.map',
   },
+  devtool: "#source-map",
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env', 'stage-0', 'react'],
+        },
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader", {
+          loader: "postcss-loader",
+          options: {
+            plugins: () => [require('autoprefixer')],
+          },
+        }],
+      },
+      {
+        test: /\.scss/,
+        use: ["style-loader", "css-loader", {
+          loader: "postcss-loader",
+          options: {
+            plugins: () => [require('autoprefixer')],
+          },
+        }],
+      },
+    ],
+  },
+
 };

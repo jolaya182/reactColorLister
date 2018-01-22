@@ -28,10 +28,12 @@ class StarRating extends Component {
   }
 }
 
-StarRating.propTypes ={
-  totalStars : PropTypes.number
-}
-StarRating.defaultProps = {
-  totalStars : 5
-}
+// StarRating.propTypes ={
+//   starsSelected: propTypes.number,
+//   totalStars : PropTypes.number,
+//   onRate: PropTypes.func
+// }
+// StarRating.defaultProps = {
+//   totalStars : 5
+// }
 export default StarRating
