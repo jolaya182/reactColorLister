@@ -1,27 +1,38 @@
 import { Component } from 'react';
-import "../../styleSheets/AppColorForm.scss";
+import PropTypes from 'prop-types';
+import '../../styleSheets/AppColorForm.scss';
 
+const AddColorForm = ({ onNewColor = f => f }) => {
+  let _title,
+    _color;
 
-class AddColorForm extends Component {
-  constructor(props) {
-    super(props);
-    this.submit = this.submit.bind(this);
-  }
-  submit() {
-    const { _title, _color } = this.refs;
+  const submit = (e) => {
     e.preventDefault();
-    alert(`New Color: ${_title.value}  ${_color.value}`);
+    onNewColor(_title.value, _color.value);
     _title.value = '';
     _color.value = '#000000';
     _title.focus();
-  }
-  render() {
-    return (<form onSubmit={this.submit}>
-      <input ref="_title" type="color title..." required />
-      <input ref="_color" type="color" required />
-      <button> ADD </button>
-            </form>
-    );
-  }
-}
+  };
+
+  return (
+    <form className="add-color" onSubmit={submit}>
+      <input
+        ref={input => _title = input}
+        type="text"
+        placeholder="color title..."
+        required
+      />
+      <input
+        ref={input => _color = input}
+        type="color"
+        required
+      />
+      <button>ADD</button>
+    </form>
+  );
+};
+
+AddColorForm.propTypes = {
+  onNewColor: PropTypes.func,
+};
 export default AddColorForm;
