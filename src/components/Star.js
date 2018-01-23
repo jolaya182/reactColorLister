@@ -7,8 +7,8 @@ const Star = ({ selected = false, onClick = f => f }) =>
     onClick={onClick}
   />);
 
-// Star.propTypes = {
-//   selected: PropTypes.bool,
-//   onClick: PropsTypes.func,
-// };
+Star.propTypes = {
+  selected: PropTypes.bool,
+  onClick: PropsTypes.func,
+};
 export default Star;

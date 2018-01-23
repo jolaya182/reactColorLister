@@ -1,6 +1,8 @@
 import { Component } from 'react';
+import { v4 } from 'uuid';
 import AddColorForm from './AddColorForm';
-import '../../styleSheets/App.scss';
+import ColorList from './ColorList';
+// import '../../styleSheets/App.scss';
 
 export default class App extends Component {
   constructor(props) {
@@ -19,6 +21,7 @@ export default class App extends Component {
           color,
           rating: 0,
         }],
+
     }));
   }
   render() {
