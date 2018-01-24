@@ -1,4 +1,7 @@
+const webpack = require("webpack");
 const path = require("path");
+
+process.noDeprecation = true;
 
 module.exports = {
   entry: './src/index.js',
@@ -34,9 +37,20 @@ module.exports = {
           options: {
             plugins: () => [require('autoprefixer')],
           },
-        }],
+        }, 'sass-loader'],
       },
     ],
   },
-
+  plugins: [
+    new webpack.DefinePlugin({
+        "process.env": {
+            NODE_ENV: JSON.stringify("production")
+        }
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+        sourceMap: true,
+        warnings: false,
+        mangle: false
+    })
+]
 };
