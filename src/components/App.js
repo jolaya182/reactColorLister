@@ -1,8 +1,8 @@
-import { Component } from 'react'
-import { v4 } from 'uuid'
-import AddColorForm from './AddColorForm'
-import ColorList from './ColorList'
-import '../../styleSheets/App.scss'
+import { Component } from 'react';
+import { v4 } from 'uuid';
+import AddColorForm from './AddColorForm';
+import ColorList from './ColorList';
+import '../../styleSheets/App.scss';
 
 export default class App extends Component {
 
