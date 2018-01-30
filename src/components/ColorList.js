@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import Color from './Color'
-import '../../styleSheets/ColorList.scss'
+import PropTypes from 'prop-types';
+import Color from './Color';
+import '../../styleSheets/ColorList.scss';
 
 const ColorList = ({ colors=[], onRate=f=>f, onRemove=f=>f }) =>
     <div className="color-list">
