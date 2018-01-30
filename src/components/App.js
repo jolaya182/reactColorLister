@@ -1,6 +1,7 @@
 import { Component } from 'react';
+import { React } from 'react';
 import { v4 } from 'uuid';
-import AddColorForm from './AddColorForm';
+import AddColorForm from './AddColorForm'; 
 import ColorList from './ColorList';
 // import '../../styleSheets/App.scss';
 
@@ -48,12 +49,7 @@ export default class App extends Component {
     const { colors } = this.state;
     return (
       <div className="app">
-        <AddColorForm onNewColor={addColor} />
-        <ColorList
-          colors={colors}
-          onRate={rateColor}
-          onRemove={removeColor}
-        />
+        
       </div>
     );
   }
