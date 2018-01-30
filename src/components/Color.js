@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import StarRating from './StarRating'
-import '../../styleSheets/Color.scss'
+import PropTypes from 'prop-types';
+import StarRating from './StarRating';
+import '../../styleSheets/Color.scss';
 
 const Color = ({ title, color, rating=0, onRemove=f=>f, onRate=f=>f}) =>
     <section className="color">
