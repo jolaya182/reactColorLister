@@ -21,4 +21,4 @@ ColorList.propTypes = {
     onRemove: PropTypes.func
 }
 
-export default ColorList
+export default ColorList;

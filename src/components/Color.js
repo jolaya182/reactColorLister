@@ -22,4 +22,4 @@ Color.propTypes = {
     onRate: PropTypes.func
 }
 
-export default Color
+export default Color;
