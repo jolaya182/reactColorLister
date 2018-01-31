@@ -7,5 +7,7 @@ to run type the following:
 
 npm install
 
+aftrr the install type
+
 webpack
 
