@@ -11,4 +11,4 @@ Star.propTypes = {
     onClick: PropTypes.func
 }
 
-export default Star
+export default Star;
