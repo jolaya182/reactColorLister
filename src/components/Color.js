@@ -21,5 +21,4 @@ Color.propTypes = {
     onRemove: PropTypes.func,
     onRate: PropTypes.func
 }
-
 export default Color;
