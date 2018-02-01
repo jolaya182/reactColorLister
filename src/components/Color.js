@@ -8,7 +8,7 @@ const Color = ({ title, color, rating=0, onRemove=f=>f, onRate=f=>f}) =>
         <button onClick={onRemove}>X</button>
         <div className="color"
              style={{ backgroundColor: color }}>
-        </div>
+        </div> 
         <div>
             <StarRating starsSelected={rating} onRate={onRate}/>
         </div>
