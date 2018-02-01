@@ -5,7 +5,7 @@ const app = require('../app');
 
 // result
 
-sayHelloResult = app.sayHello();  
+sayHelloResult = app.sayHello();     
 addNumbersResult = app.addNumbers(1, 1);
 
 describe("App", () => {
