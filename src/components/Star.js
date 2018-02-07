@@ -13,4 +13,4 @@ Star.propTypes = {
 };
 
 export default Star;
-// end of content 2
+// end of content 3
